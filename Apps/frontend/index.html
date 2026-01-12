@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globals.css">
+  <title>Wallet Connection – Wide</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Wallet Connection</h1>
+      <div id="status" class="status disconnected">Disconnected</div>
+    </div>
+
+    <div class="grid">
+      <div class="box full">
+        <div class="label">Wallet Address</div>
+        <div class="value">
+            <p id="wallet-address">-</p>
+            <p>Ilham Candra Mukti - 231011402205</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="label">Balance</div>
+        <div id="balance" class="value">- AVAX</div>
+      </div>
+
+      <div class="box">
+        <div class="label">Network</div>
+        <div id="network" class="value network bad">Unknown</div>
+      </div>
+    </div>
+
+    <button id="connect-btn" onclick="handleConnectWallet()">Connect Wallet</button>
+  </div>
+
+  <script src="globals.js"></script>
+</body>
+</html>
